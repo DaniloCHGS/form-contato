@@ -5,4 +5,4 @@ Procuro aplicar melhorias no front end incluindo o básico de SEO na arquitetura
 Utilizar Scss para ter uma folha de estilo mais adaptável a outros navegadores.
 Mask para orientar melhor visualmente os inputs.
 Criar um modelo apresentável para enviar por email.
-Aprender definitivamente a trabalhar com GIT/GITHUB e me tornar uma profissional melho
+Aprender definitivamente a trabalhar com GIT/GITHUB e me tornar uma profissional melhor.
