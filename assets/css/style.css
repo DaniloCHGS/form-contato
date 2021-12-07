@@ -10,6 +10,14 @@
   font-weight: bold;
 }
 
+.input-erro {
+  border: 1px solid red;
+}
+
+.input-success {
+  border: 1px solid green;
+}
+
 body {
   background-color: whitesmoke;
 }
@@ -32,9 +40,10 @@ body {
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   background-color: #fff;
-  padding: 10px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  padding: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
 }
 
 .contato-container:hover {
@@ -47,6 +56,15 @@ body {
 }
 
 .msg-erro {
+  color: red;
+  font-weight: 500;
+  font-size: 15px;
   display: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.check.input-erro + .obrigatorio {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

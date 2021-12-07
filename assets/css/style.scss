@@ -8,9 +8,18 @@ $shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
 
 $shadow-lg: 0 25px 50px -12px rgba(0,0,0,0.25);
 
+$transition-default-2s: all .2s ease-in-out;
+
 .obrigatorio {
     color: red;
     font-weight: bold;
+}
+
+.input-erro {
+    border: 1px solid red;
+}
+.input-success {
+    border: 1px solid green;
 }
 
 body {
@@ -26,8 +35,9 @@ body {
     width: 500px;
     box-shadow: $shadow;
     background-color: #fff;
-    padding: 10px;
-    transition: all .2s ease-in-out;
+    padding: 15px;
+    transition: $transition-default-2s;
+    border-radius: 7px;
 }
 .contato-container:hover {
     box-shadow: $shadow-lg;
@@ -36,5 +46,12 @@ body {
     margin-bottom: 5px;
 }
 .msg-erro {
+    color: red;
+    font-weight: 500;
+    font-size: 15px;
     display: none;
+    transition: $transition-default-2s;
+}
+.check.input-erro + .obrigatorio {
+    display: block;
 }
