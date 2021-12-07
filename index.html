@@ -83,11 +83,15 @@
 
                     if(!$(el).val()) {
                         addErro(el)
+                        qtdErro++
                     } else {
                         if($(el).attr('name') == 'telefone'){
                             if($(el).val().length == 16) {
                                 $(el).addClass('input-success')
-                            } else { addErro(el) }
+                            } else { 
+                                addErro(el)
+                                qtdErro++
+                            }
                         } else { $(el).addClass('input-success') }
 
                     }
@@ -100,7 +104,7 @@
             function addErro(el, time = 3000){
                 $(el).addClass('input-erro')
                 setTimeout(()=>{ $(el).removeClass('input-erro') }, time)
-                qtdErro++
+                
             }
         })
     </script>
